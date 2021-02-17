@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+    </head>
+    <body>
+    <ul>
+    {{range .}}
+        <li>
+        {{.Date}}
+        {{.Values.Open}} {{.Values.High}} {{.Values.Low}} {{.Values.Close}} {{.Values.Volume}} {{.Values.Adj}}
+        </li>
+    {{end}}
+    </ul>
+    </body>
+</html>
